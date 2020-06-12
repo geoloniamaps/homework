@@ -1,0 +1,72 @@
+{
+  "version": 8,
+  "name": "Geolonia Homework",
+  "metadata": {},
+  "sources": {
+    "geolonia": {
+      "type": "vector",
+      "url": "https://geolonia.github.io/tiny-tileserver/tiles.json"
+    }
+  },
+  "sprite": "https://sprites.tilecloud.io/maki",
+  "glyphs": "https://glyphs.tilecloud.io/{fontstack}/{range}.pbf",
+  "layers": [
+    {
+      "id": "background",
+      "type": "background",
+      "paint": {
+        "background-color": "rgba(255, 255, 255, 1)"
+      }
+    },
+    {
+      "id": "water",
+      "type": "fill",
+      "source": "geolonia",
+      "source-layer": "water",
+      "filter": [
+        "==",
+        "$type",
+        "Polygon"
+      ],
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-color": "#555555",
+        "fill-antialias": true
+      }
+    },
+    {
+      "id": "boundary_state",
+      "type": "line",
+      "source": "geolonia",
+      "source-layer": "boundary",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round",
+        "visibility": "visible"
+      },
+      "paint": {
+        "line-color": "#555555",
+        "line-width": 2,
+        "line-blur": 0.4
+      }
+    },
+    {
+      "id": "boundary_country",
+      "type": "line",
+      "source": "geolonia",
+      "source-layer": "boundary",
+      "layout": {
+        "line-cap": "round",
+        "line-join": "round"
+      },
+      "paint": {
+        "line-color": "#555555",
+        "line-width": 2,
+        "line-blur": 0.4
+      }
+    }
+  ],
+  "id": "geolonia-homework"
+}
