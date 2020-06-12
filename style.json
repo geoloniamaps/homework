@@ -8,8 +8,6 @@
       "url": "https://geolonia.github.io/tiny-tileserver/tiles.json"
     }
   },
-  "sprite": "https://sprites.tilecloud.io/maki",
-  "glyphs": "https://glyphs.tilecloud.io/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
