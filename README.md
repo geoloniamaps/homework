@@ -1,9 +1,9 @@
-# A style based on GSI Japan and OpenStreetMap for Geolonia Map
+# A style named "Homework" for Geolonia Map
 
 This is a Mapbox GL JS based style for [Geolonia](https://geolonia.com/).
 
-* [DEMO](https://geolonia.github.io/preview/#geolonia/gsi)
-* [DEMO on editor](https://editor.geolonia.com/?style=https://raw.githubusercontent.com/geolonia/gsi/master/style.json)
+* [DEMO](https://geolonia.github.io/preview/#geolonia/homework)
+* [DEMO on editor](https://editor.geolonia.com/?style=https://raw.githubusercontent.com/geolonia/homework/master/style.json)
 
 ## Development
 

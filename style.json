@@ -1,72 +1,25 @@
-{
-  "version": 8,
-  "name": "Geolonia Homework",
-  "metadata": {},
-  "sources": {
-    "geolonia": {
-      "type": "vector",
-      "url": "https://geolonia.github.io/tiny-tileserver/tiles.json"
-    }
-  },
-  "sprite": "https://sprites.tilecloud.io/maki",
-  "glyphs": "https://glyphs.tilecloud.io/{fontstack}/{range}.pbf",
-  "layers": [
-    {
-      "id": "background",
-      "type": "background",
-      "paint": {
-        "background-color": "rgba(255, 255, 255, 1)"
-      }
-    },
-    {
-      "id": "water",
-      "type": "fill",
-      "source": "geolonia",
-      "source-layer": "water",
-      "filter": [
-        "==",
-        "$type",
-        "Polygon"
-      ],
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-color": "#555555",
-        "fill-antialias": true
-      }
-    },
-    {
-      "id": "boundary_state",
-      "type": "line",
-      "source": "geolonia",
-      "source-layer": "boundary",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "#555555",
-        "line-width": 2,
-        "line-blur": 0.4
-      }
-    },
-    {
-      "id": "boundary_country",
-      "type": "line",
-      "source": "geolonia",
-      "source-layer": "boundary",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
-      },
-      "paint": {
-        "line-color": "#555555",
-        "line-width": 2,
-        "line-blur": 0.4
-      }
-    }
-  ],
-  "id": "geolonia-homework"
-}
+# Default style for Geolonia Map
+
+This is a Mapbox GL JS based style for [Geolonia](https://geolonia.com/).
+
+* [DEMO](https://geolonia.github.io/preview/#geolonia/basic)
+* [DEMO on editor](https://editor.geolonia.com/?style=https://raw.githubusercontent.com/geolonia/basic/master/style.json)
+
+## Development
+
+### Installs the Maputnik CLI
+
+https://github.com/maputnik/editor/wiki/Maputnik-CLI
+
+```
+$ curl -L https://github.com/maputnik/editor/releases/download/v1.6.1/maputnik_darwin -o /usr/local/bin/maputnik
+$ chmod 755 /usr/local/bin/maputnik
+```
+
+### Start up the Maputnik App
+
+```
+maputnik --watch --file ./style.json
+```
+
+Then access the Maputnik editor GUI at [localhost:8000](https://localhost:8000/).
