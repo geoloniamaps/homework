@@ -1,7 +1,6 @@
 {
   "version": 8,
   "name": "Geolonia Homework",
-  "metadata": {},
   "sources": {
     "geolonia": {
       "type": "vector",
