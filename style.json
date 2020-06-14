@@ -1,10 +1,11 @@
 {
   "version": 8,
   "name": "Geolonia Homework",
+  "metadata": {},
   "sources": {
-    "geolonia": {
+    "natural-earth": {
       "type": "vector",
-      "url": "https://geolonia.github.io/tiny-tileserver/tiles.json"
+      "url": "https://cdn.geolonia.com/tiles/tiles.json"
     }
   },
   "layers": [
@@ -18,7 +19,7 @@
     {
       "id": "water",
       "type": "fill",
-      "source": "geolonia",
+      "source": "natural-earth",
       "source-layer": "water",
       "filter": [
         "==",
@@ -34,29 +35,14 @@
       }
     },
     {
-      "id": "boundary_state",
+      "id": "boundary",
       "type": "line",
-      "source": "geolonia",
-      "source-layer": "boundary",
+      "source": "natural-earth",
+      "source-layer": "admin",
       "layout": {
         "line-cap": "round",
         "line-join": "round",
         "visibility": "visible"
-      },
-      "paint": {
-        "line-color": "#555555",
-        "line-width": 2,
-        "line-blur": 0.4
-      }
-    },
-    {
-      "id": "boundary_country",
-      "type": "line",
-      "source": "geolonia",
-      "source-layer": "boundary",
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round"
       },
       "paint": {
         "line-color": "#555555",
