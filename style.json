@@ -13,7 +13,7 @@
       "id": "background",
       "type": "background",
       "paint": {
-        "background-color": "#FFFFFF"
+        "background-color": "rgba(7, 17, 29, 1)"
       }
     },
     {
@@ -30,7 +30,7 @@
         "visibility": "visible"
       },
       "paint": {
-        "fill-color": "#333333",
+        "fill-color": "rgba(18, 35, 48, 1)",
         "fill-antialias": true
       }
     },
@@ -45,9 +45,19 @@
         "visibility": "visible"
       },
       "paint": {
-        "line-color": "#555555",
-        "line-width": 2,
-        "line-blur": 0.4
+        "line-color": "rgba(18, 35, 48, 1)",
+        "line-width": {
+          "stops": [
+            [
+              6,
+              1
+            ],
+            [
+              10,
+              3
+            ]
+          ]
+        }
       }
     }
   ],
