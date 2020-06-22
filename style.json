@@ -8,6 +8,7 @@
       "url": "https://cdn.geolonia.com/tiles/natural-earth.json"
     }
   },
+  "glyphs": "https://glyphs.geolonia.com/{fontstack}/{range}.pbf",
   "layers": [
     {
       "id": "background",
