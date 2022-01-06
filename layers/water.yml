@@ -1,0 +1,13 @@
+id: water
+type: fill
+source: natural-earth
+source-layer: water
+filter:
+  - '=='
+  - $type
+  - Polygon
+layout:
+  visibility: visible
+paint:
+  fill-color: rgba(18, 35, 48, 1)
+  fill-antialias: true
