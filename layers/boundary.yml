@@ -1,0 +1,16 @@
+id: boundary
+type: line
+source: natural-earth
+source-layer: admin
+layout:
+  line-cap: round
+  line-join: round
+  visibility: visible
+paint:
+  line-color: rgba(18, 35, 48, 1)
+  line-width:
+    stops:
+      - - 6
+        - 1
+      - - 10
+        - 3

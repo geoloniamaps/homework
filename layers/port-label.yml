@@ -1,0 +1,23 @@
+id: port-label
+type: symbol
+source: natural-earth
+source-layer: port_label
+layout:
+  text-padding: 2
+  text-font:
+    - Noto Sans Regular
+  text-anchor: top
+  icon-image: harbor-11
+  text-field: '{name}'
+  text-offset:
+    - 0
+    - 0.6
+  text-size: 10
+  text-max-width: 9
+  visibility: visible
+  icon-size: 1
+  text-optional: true
+paint:
+  text-color: '#fff'
+  text-halo-width: 0.2
+  text-halo-color: '#000000'
