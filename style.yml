@@ -1,6 +1,5 @@
 version: 8
 name: Geolonia Homework
-metadata: {}
 sources:
   natural-earth:
     type: vector
@@ -17,4 +16,3 @@ layers:
   - !!inc/file layers/place-label.yml
   - !!inc/file layers/state-label.yml
   - !!inc/file layers/country-label.yml
-id: geolonia-homework
