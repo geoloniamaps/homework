@@ -1,14 +1,16 @@
 {
   "name": "geolonia-homework",
   "version": "0.1.0",
-  "description": "Very simple style for [Geolonia](https://geolonia.com/).",
+  "description": "3D style based on default style for [Geolonia](https://geolonia.com/).",
   "main": "style.json",
   "scripts": {
-    "start": "/usr/local/bin/maputnik --watch --file ./style.json"
+    "start": "charites serve style.yml --provider geolonia",
+    "start:maputnik": "/usr/local/bin/maputnik --watch --file ./style.json",
+    "build": "charites build style.yml style.json"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/geolonia/homework.git"
+    "url": "git+https://github.com/geoloniamaps/homework.git"
   },
   "author": {
     "name": "Geolonia Inc.",
@@ -16,7 +18,10 @@
   },
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/geolonia/homework/issues"
+    "url": "https://github.com/geoloniamaps/homework/issues"
   },
-  "homepage": "https://github.com/geolonia/homework#readme"
+  "homepage": "https://github.com/geoloniamaps/homework#readme",
+  "devDependencies": {
+    "@unvt/charites": "^0.1.2"
+  }
 }

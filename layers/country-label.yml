@@ -1,0 +1,14 @@
+id: country-label
+type: symbol
+source: natural-earth
+source-layer: country_label
+layout:
+  text-font:
+    - Noto Sans Regular
+  text-field: '{name}'
+  text-size: 20
+  text-max-width: 9
+paint:
+  text-color: '#fff'
+  text-halo-width: 0.2
+  text-halo-color: '#000000'

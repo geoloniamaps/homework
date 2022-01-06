@@ -1,0 +1,18 @@
+version: 8
+name: Geolonia Homework
+sources:
+  natural-earth:
+    type: vector
+    url: https://cdn.geolonia.com/tiles/natural-earth.json
+sprite: https://sprites.geolonia.com/basic-white
+glyphs: https://glyphs.geolonia.com/{fontstack}/{range}.pbf
+layers:
+  - !!inc/file layers/background.yml
+  - !!inc/file layers/water.yml
+  - !!inc/file layers/boundary.yml
+  - !!inc/file layers/airport-label.yml
+  - !!inc/file layers/port-label.yml
+  - !!inc/file layers/marine-label.yml
+  - !!inc/file layers/place-label.yml
+  - !!inc/file layers/state-label.yml
+  - !!inc/file layers/country-label.yml
